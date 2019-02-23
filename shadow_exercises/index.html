@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>An Introduction to CSS Shapes</title>
+</head>
+<style>
+
+body{
+    font-size: 24px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Lato", sans-serif;
+}
+
+.circle{
+    float: left;
+    height: 200px;
+    width: 200px;
+    shape-outside: circle();
+    clip-path: circle(50% at 0% 50%);
+    background: linear-gradient(to top right, #fdb171, #fd987d);
+}
+
+.ellipse{
+    float: left;
+    width: 200px;
+    height: 400px;
+    shape-outside: ellipse();
+    clip-path: ellipse(35% 45%);
+    background: linear-gradient(to top right, #eeeeee, #e75858);
+}
+
+.inset{
+    float: left;
+    width: 300px;
+    height: 300px;
+    shape-outside: inset(25px round 100px);
+    clip-path: inset(25px round 100px);
+    background: linear-gradient(#58C2ED, #1B85DC);
+}
+
+.polygon{
+    float: left;
+    width: 300px;
+    height: 300px;
+    shape-margin: 10px;
+    shape-outside: polygon(0 0, 0 100%, 100% 100%); 
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+    background: linear-gradient(to top right, #86F7CC, #67D7F5);
+}
+
+.ex1{
+    float: left;
+    width: 200px;
+    height: 400px;
+    shape-outside: polygon(0 0, 0 100%, 75% 50%);
+    clip-path: polygon(0 0, 0 100%, 75% 50%);
+    background: linear-gradient(to top right, #86F7CC, #67D7F5);
+    shape-margin: 10px;
+
+}
+.ex2{
+    float: right;
+    width: 200px;
+    height: 400px;
+    shape-outside: polygon(0 0, 100% 0, 100% 100%, 0 100%, 50% 50%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 50% 50%);
+    background: linear-gradient(to top right, #86F7CC, #67D7F5);
+
+}
+
+</style>
+<body>
+    <h1>Circle</h1>
+    <div class="circle"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam odio voluptatum voluptates dolor delectus quam quos, itaque nihil! Laudantium veniam fugit dolor qui saepe natus totam harum dolores aliquid earum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi aperiam nihil et magni asperiores molestias, facere rem doloremque repudiandae magnam deleniti qui voluptatum dolorum, cupiditate voluptates. Quisquam a eius eveniet. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus repudiandae, minus asperiores nisi delectus id corrupti aspernatur natus molestias hic sint, non alias labore cupiditate ab aliquam, harum ducimus adipisci?</p>
+
+    <h1>Ellipse</h1>
+    <div class="ellipse"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea voluptatibus optio accusantium modi quae, minus est repellat quidem rem quo repellendus ullam tempora dignissimos autem exercitationem, reiciendis, sunt assumenda! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil cupiditate inventore porro harum eius ex, laborum dicta error libero quasi est enim animi id repudiandae quis sit. Eaque, harum labore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit inventore iure nam cupiditate dolores, asperiores nisi, omnis repellendus, alias impedit ducimus voluptate nulla reprehenderit accusamus quas rerum modi? Fugit, repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, facere soluta assumenda maiores quidem illo velit quas incidunt exercitationem aspernatur, magni aperiam totam dolorem, accusamus iusto voluptate omnis repellat recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque numquam quo molestiae autem incidunt nulla id commodi vel, reprehenderit, ab eius omnis facere. Deleniti hic delectus vel, at odio ea! lorem</p>
+
+    <h1>Inset</h1>
+    <div class="inset"></div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo saepe esse sunt, commodi suscipit facilis reprehenderit ex quis est dignissimos eius, voluptatum fuga? Quaerat repellat consectetur cum aliquam impedit blanditiis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus vitae harum esse aperiam, reprehenderit, deleniti ab magnam atque quidem quos nesciunt facilis? Sequi unde nihil accusamus, quasi eius consequatur illum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio soluta accusantium quod sed, dignissimos officia incidunt dolorum fugiat veritatis, dolorem sunt perspiciatis.</p>
+
+    <h1>Polygon</h1>
+    <div class="polygon"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aliquam minima perspiciatis repellat, accusamus sed quam incidunt nostrum veniam in quos, delectus distinctio modi, voluptatem laudantium iste non? Voluptas, quis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem totam voluptate aperiam, maxime doloribus minima temporibus corporis quaerat obcaecati rerum laudantium debitis atque veritatis quod asperiores fugiat sint repellendus harum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius ullam at maiores esse voluptatibus doloremque quam iusto ratione perspiciatis id. Quibusdam illo vel, atque exercitationem adipisci debitis eos illum possimus?</p>
+
+    <h1>Exercise</h1>
+    <div class="ex1"></div>
+    <div class="ex2"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti praesentium, sapiente doloremque dolore quis vero dolorem perspiciatis illo, ea iure recusandae sunt odit, ab corporis? Voluptatibus ipsa quidem ab corporis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et delectus aut doloremque temporibus est amet iusto nulla perspiciatis, minus optio unde veniam illo, facilis ullam nesciunt magnam qui harum? Necessitatibus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum illum rem voluptatem omnis possimus, iure aliquid sunt quibusdam dignissimos alias, tempora voluptates doloribus architecto, necessitatibus dolore numquam veritatis est quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi recusandae officiis, optio possimus ea assumenda distinctio pariatur unde tenetur odit hic facilis, perspiciatis perferendis beatae dicta enim consequuntur neque omnis.</p>
+</body>
+</html>
